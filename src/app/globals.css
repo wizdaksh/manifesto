@@ -4,7 +4,10 @@
 
 
 @layer components {
-    .life__headline {
-        @apply text-3xl flex flex-auto justify-center overflow-hidden
+    .marqueeRow {
+        @apply flex flex-row space-x-2 sm:space-x-3 md:space-x-10 w-max dark:text-white 
     }    
+    .life__headline {
+        @apply text-lg sm:text-xl md:text-6xl flex flex-auto justify-center overflow-visible 
+    }
 }
