@@ -1,0 +1,6 @@
+export const english = '"Life is a Game"'
+export const french = '“La vie est un jeu”'
+export const arabic = '"الحياة جوهرة"'
+export const japanese = '「人生はゲームだ」'
+export const korean = '"인생은 게임이다"'
+export const hindi = '"ज़िन्दगी के खेल"'
