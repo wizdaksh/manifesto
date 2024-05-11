@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Menu() {
     return (
-        <header className="relative w-screen flex flex-row flex-1 justify-between p-5 font-walkway overflow-hidden bg-white dark:bg-black">
+        <header className="relative w-full flex flex-row flex-1 justify-between p-5 font-walkway overflow-hidden bg-white dark:bg-black">
             {/* Fixed shortcut menu for single page */}
             <div className="border-solid lg:border border-black dark:border-white md:w-3/4 w-auto">
                 <nav className="text-black dark:text-white flex flex-row justify-between">
