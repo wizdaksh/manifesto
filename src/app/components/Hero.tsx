@@ -7,7 +7,10 @@ import React, { useState, useEffect } from "react";
 import * as Constants from '../constants/marquee';
 
 export default function Hero () {
-    const [width, setWidth ] = useState(window.innerWidth);
+    const [width, setWidth ] = useState(() => {
+        if (typeof window === 'undefined') {return 0;}
+        return window.innerWidth;
+    });
     
     useEffect(() => {
         const handleResize = () => {
@@ -23,7 +26,7 @@ export default function Hero () {
     }, []);
 
     
-    let windowWidth = window.innerWidth;
+    let windowWidth = width;
     let factor = Math.floor(width*3/windowWidth);
     
     if (width <= 480) {

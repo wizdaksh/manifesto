@@ -9,7 +9,7 @@ export default function Menu() {
             <div className="border-solid lg:border border-black dark:border-white md:w-3/4 w-auto">
                 <nav className="text-black dark:text-white flex flex-row justify-between">
                     <div className="bg-white p-1">
-                        <Image src={YinYang} alt='balance' width={30} height={30}  placeholder='empty'/>
+                        <Image src={YinYang} alt='balance' width={30} height={30}  priority placeholder='empty'/>
                     </div>
                     <ul className="lg:flex flex-row space-x-24 pr-3.5 text-2xl align-middle hidden">
                         <li>Start</li>

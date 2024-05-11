@@ -12,6 +12,7 @@ const walkway = localfont({
       },
     ],
     variable: '--font-walkway',
+    preload: true,
 });
 
 export const metadata: Metadata = {
