@@ -21,6 +21,7 @@ export default function Video () {
       return { darkMode, setDarkMode };
     };
 
+    useDarkMode();
 
     const [init, setInit] = useState(false)
 
@@ -122,4 +123,5 @@ export default function Video () {
           />
         )
       }
+      return <></>
 }
