@@ -9,19 +9,21 @@ body {
 }
 
 
-
+/* Hero Component */
 @layer components {
     .marqueeRow {
         @apply flex flex-row space-x-2 sm:space-x-3 md:space-x-10 w-max dark:text-white select-none 
     }    
     .life__headline {
-        @apply text-6xl md:text-8xl flex flex-auto justify-center overflow-visible rotate-90 md:rotate-0
+        @apply text-6xl md:text-[11vh] flex flex-auto justify-center overflow-visible rotate-90 md:rotate-0
     }
     .mathLatex {
-        @apply hidden md:flex text-7xl 
+        @apply hidden md:flex text-[11vh] 
     }
 }
 
+
+/* ScrollSection Component */
 @layer components {
     .scroll-section-outer{
         @apply overflow-hidden

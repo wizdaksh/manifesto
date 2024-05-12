@@ -6,7 +6,6 @@ import Journey3 from './components/Journey3';
 import Mantra from './components/Mantra';
 import ScrollSection from './components/ScrollSection';
 import Video from './components/Video';
-import Thanks from './components/Thanks';
 import Footer from './components/Footer';
 
 export default function Home() {
@@ -20,7 +19,6 @@ export default function Home() {
       <Mantra />
       <ScrollSection />
       <Video />
-      <Thanks />
       <Footer />
     </main>
   );

@@ -17,6 +17,8 @@
     "@gsap/react": "^2.1.1",
     "@mui/icons-material": "^5.15.17",
     "@mui/material": "^5.15.17",
+    "@tsparticles/all": "^3.3.0",
+    "@tsparticles/react": "^3.0.0",
     "autoprefixer": "^10.4.19",
     "gsap": "^3.12.5",
     "jquery": "^3.7.1",
