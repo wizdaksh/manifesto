@@ -30,6 +30,8 @@ export default function Video () {
           pauseOnBlur: true,
           style: {
                 position: "relative",
+                width: "100%",
+                height: "100%",
               },
             relativePosition: true,
             background: {
