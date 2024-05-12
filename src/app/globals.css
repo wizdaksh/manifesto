@@ -18,7 +18,7 @@ body {
         @apply text-6xl md:text-[11vh] flex flex-auto justify-center overflow-visible rotate-90 md:rotate-0
     }
     .mathLatex {
-        @apply hidden md:flex text-[11vh] 
+        @apply hidden md:flex text-[11vh] text-blue dark:text-pink 
     }
 }
 
