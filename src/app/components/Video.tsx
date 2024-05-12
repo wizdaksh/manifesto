@@ -28,10 +28,12 @@ export default function Video () {
         () => ({
           pauseOnOutsideViewport: true,  
           pauseOnBlur: true,
+          fullScreen: true,
+          autoPlay: true,
           style: {
                 position: "relative",
-                width: "100%",
-                height: "100%",
+                width: "100vw",
+                height: "100vh",
               },
             relativePosition: true,
             background: {
