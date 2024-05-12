@@ -32,7 +32,7 @@ export default function Video () {
           autoPlay: true,
           style: {
                 position: "relative",
-                width: "100vw",
+                width: "90vw",
                 height: "100vh",
                 overflow: "hidden",
               },
