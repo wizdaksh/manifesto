@@ -38,7 +38,8 @@ export default function Video () {
             relativePosition: true,
             background: {
             color: {
-              value: '#ff00bf',
+              value: '#000000',
+              opacity: 0,
             },
           },
           fpsLimit: 120,
