@@ -34,6 +34,7 @@ export default function Video () {
                 position: "relative",
                 width: "100vw",
                 height: "100vh",
+                overflow: "hidden",
               },
             relativePosition: true,
             background: {
