@@ -10,6 +10,18 @@ import {loadSlim } from "@tsparticles/slim";
 
 export default function Video () {
     
+    const [darkMode, setDarkMode] = useState(false);
+    const useDarkMode = () => {
+    
+      useEffect(() => {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') setDarkMode(true);
+      }, []);
+    
+      return { darkMode, setDarkMode };
+    };
+
+
     const [init, setInit] = useState(false)
 
     useEffect(() => {
@@ -38,7 +50,7 @@ export default function Video () {
             relativePosition: true,
             background: {
             color: {
-              value: "#000",
+              value: darkMode ? "#000" : "#fff",
             },
           },
           fpsLimit: 120,
@@ -65,10 +77,10 @@ export default function Video () {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value:  darkMode ? "#000" : "#fff",
             },
             links: {
-              color: "#ffffff",
+              color:  darkMode ? "#000" : "#fff",
               distance: 150,
               enable: true,
               opacity: 0.5,
@@ -76,7 +88,7 @@ export default function Video () {
             },
             move: {
               enable: true,
-              random: true,
+              random: false,
               speed: 2,
               straight: false,
             },
@@ -84,7 +96,7 @@ export default function Video () {
               density: {
                 enable: true,
               },
-              value: 20,
+              value: 40,
             },
             opacity: {
               value: 0.5,
@@ -98,7 +110,7 @@ export default function Video () {
           },
           detectRetina: true,
         }),
-        [],
+        [darkMode],
       );
 
       if (init) {
